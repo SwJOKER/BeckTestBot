@@ -18,6 +18,7 @@ def txt_to_dict(path):
             dictionary[current_q][res[2]] = res[1]
     return dictionary
 
+
 def txt_to_json(txt_path, out_path):
     questions = txt_to_dict(txt_path)
     json.dump(questions, open(out_path, 'w', encoding='UTF-8'), ensure_ascii=False, indent=4)
